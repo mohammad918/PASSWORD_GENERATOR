@@ -1,0 +1,136 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'C:/Users/HADIRAYANEH/PASSWORD_GENERATOR/UI/signin.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_signin(object):
+    def setupUi(self, signin):
+        signin.setObjectName("signin")
+        signin.resize(725, 777)
+        self.centralwidget = QtWidgets.QWidget(signin)
+        self.centralwidget.setObjectName("centralwidget")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setGeometry(QtCore.QRect(-1, -1, 721, 751))
+        self.frame.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.frame.setStyleSheet("background-color: rgb(0, 85, 127);\n"
+"border-radius:15px;")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.frame_2 = QtWidgets.QFrame(self.frame)
+        self.frame_2.setGeometry(QtCore.QRect(70, 79, 581, 621))
+        self.frame_2.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"border-radius:15px;")
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.label = QtWidgets.QLabel(self.frame_2)
+        self.label.setGeometry(QtCore.QRect(220, 20, 131, 91))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI Semibold")
+        font.setPointSize(23)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
+        self.label.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        self.label.setObjectName("label")
+        self.lineEdit = QtWidgets.QLineEdit(self.frame_2)
+        self.lineEdit.setGeometry(QtCore.QRect(50, 180, 471, 61))
+        font = QtGui.QFont()
+        font.setFamily("Raleway")
+        font.setPointSize(12)
+        self.lineEdit.setFont(font)
+        self.lineEdit.setStyleSheet("background-color: rgb(199, 199, 199);")
+        self.lineEdit.setObjectName("lineEdit")
+        self.lineEdit_3 = QtWidgets.QLineEdit(self.frame_2)
+        self.lineEdit_3.setGeometry(QtCore.QRect(50, 260, 471, 61))
+        font = QtGui.QFont()
+        font.setFamily("Raleway")
+        font.setPointSize(12)
+        self.lineEdit_3.setFont(font)
+        self.lineEdit_3.setStyleSheet("background-color: rgb(199, 199, 199);")
+        self.lineEdit_3.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.lineEdit_3.setDragEnabled(False)
+        self.lineEdit_3.setReadOnly(False)
+        self.lineEdit_3.setObjectName("lineEdit_3")
+        self.signinbutton = QtWidgets.QPushButton(self.frame_2)
+        self.signinbutton.setGeometry(QtCore.QRect(160, 420, 251, 71))
+        font = QtGui.QFont()
+        font.setFamily("Raleway")
+        font.setPointSize(18)
+        self.signinbutton.setFont(font)
+        self.signinbutton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.signinbutton.setStyleSheet("color: rgb(255, 255, 255);\n"
+"background-color: rgb(0, 85, 127);")
+        self.signinbutton.setObjectName("signinbutton")
+        self.newaccount = QtWidgets.QPushButton(self.frame_2)
+        self.newaccount.setGeometry(QtCore.QRect(160, 560, 261, 31))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        font.setUnderline(True)
+        font.setStrikeOut(False)
+        self.newaccount.setFont(font)
+        self.newaccount.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.newaccount.setStyleSheet("color: rgb(0, 0, 255);")
+        self.newaccount.setObjectName("newaccount")
+        self.close = QtWidgets.QPushButton(self.frame)
+        self.close.setGeometry(QtCore.QRect(680, 10, 31, 28))
+        self.close.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.close.setStyleSheet("background-color: rgb(255, 0, 0);\n"
+"border-radius:8px;")
+        self.close.setText("")
+        self.close.setObjectName("close")
+        self.min = QtWidgets.QPushButton(self.frame)
+        self.min.setGeometry(QtCore.QRect(640, 10, 31, 28))
+        self.min.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.min.setStyleSheet("background-color: rgb(85, 170, 0);\n"
+"border-radius:8px;")
+        self.min.setText("")
+        self.min.setObjectName("min")
+        self.back = QtWidgets.QPushButton(self.frame)
+        self.back.setGeometry(QtCore.QRect(10, 10, 41, 41))
+        self.back.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.back.setStyleSheet("background-color: rgb(0, 85, 255);")
+        self.back.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("../Pictures/icons8-return-100.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.back.setIcon(icon)
+        self.back.setIconSize(QtCore.QSize(27, 50))
+        self.back.setObjectName("back")
+        signin.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(signin)
+        self.statusbar.setObjectName("statusbar")
+        signin.setStatusBar(self.statusbar)
+
+        self.retranslateUi(signin)
+        self.close.clicked.connect(signin.close)
+        self.min.clicked.connect(signin.showMinimized)
+        QtCore.QMetaObject.connectSlotsByName(signin)
+
+    def retranslateUi(self, signin):
+        _translate = QtCore.QCoreApplication.translate
+        signin.setWindowTitle(_translate("signin", "MainWindow"))
+        self.label.setText(_translate("signin", "sign in"))
+        self.lineEdit.setPlaceholderText(_translate("signin", "type your Username or E-mail"))
+        self.lineEdit_3.setPlaceholderText(_translate("signin", "type your password"))
+        self.signinbutton.setText(_translate("signin", "sign in"))
+        self.newaccount.setText(_translate("signin", "create new account"))
+        self.close.setToolTip(_translate("signin", "close"))
+        self.min.setToolTip(_translate("signin", "<html><head/><body><p><span style=\" color:black;\">minimize</span></p></body></html>"))
+        self.back.setToolTip(_translate("signin", "Click to go back"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    signin = QtWidgets.QMainWindow()
+    ui = Ui_signin()
+    ui.setupUi(signin)
+    signin.show()
+    sys.exit(app.exec_())
+
