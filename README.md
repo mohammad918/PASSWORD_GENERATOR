@@ -1,2 +1,6 @@
 # PASSWORD_GENERATOR
-using this little app you can make random and secure Passwords
+Create Account
+change your account information
+Generate long and Secure Passwords
+copy Password
+Offline App
