@@ -15,7 +15,7 @@ import pyperclip as pc
 import re
 from plyer import notification
 from webbrowser import open
-connection = sqlite3.connect('C:/Users/HADIRAYANEH/PASSWORD_GENERATOR/password_generator.db')
+connection = sqlite3.connect('../password_generator.db')
 C = connection.cursor()
 C.execute('''CREATE TABLE IF NOT EXISTS logsign(username TEXT NOT NULL UNIQUE,
              email TEXT NOT NULL UNIQUE,
